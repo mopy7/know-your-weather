@@ -21,7 +21,12 @@ form.addEventListener("submit", (e) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      if (data.error) {
+        alert(data.error.message);
+        return;
+      }
+
+      // console.log(data);
       cityName.textContent = data.location.name;
       weatherIcon.src = data.current.condition.icon;
       temperature.textContent = `${data.current.temp_c}°C`;
