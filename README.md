@@ -1,20 +1,24 @@
 # Know Your Weather 🌤️
 
 A simple and responsive weather application built using **HTML, CSS, and JavaScript**.  
-Users can enter a city name to fetch and display real-time weather information using the **WeatherAPI** service.
+Users can search for a city and view real-time weather information powered by **WeatherAPI**.
 
 ---
 
 ## Features
 
 - Search weather by city name
-- Display current temperature
-- Show weather condition and icon
-- Display humidity level
-- Display wind speed
-- Responsive UI for desktop and mobile
-- Clean card-based interface
-- Real-time API data fetching
+- Display:
+  - City name
+  - Temperature (°C)
+  - Weather condition
+  - Weather icon
+  - Humidity
+  - Wind speed
+- Animated loader while fetching weather data
+- Error handling for invalid city names
+- Hide previous results while loading new data
+- Responsive card-based UI
 
 ---
 
@@ -53,15 +57,9 @@ know-your-weather/
 
 1. User enters a city name.
 2. JavaScript listens for the form submission.
-3. A request is sent to the WeatherAPI endpoint.
-4. The API returns weather data in JSON format.
-5. The UI updates dynamically with:
-   - City name
-   - Temperature
-   - Weather condition
-   - Weather icon
-   - Humidity
-   - Wind speed
+3. The app sends a request to the WeatherAPI endpoint.
+4. While fetching data, a loader animation is displayed.
+5. Once the response arrives, the UI updates dynamically with weather data.
 
 ---
 
@@ -79,7 +77,7 @@ https://www.weatherapi.com/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/weather-app.git
+git clone https://github.com/mopy7/know-your-weather.git
 ```
 2. Navigate to the project folder
 ```bash
@@ -91,20 +89,15 @@ cd know-your-weather
 
 ## Future Improvements
 
-Planned upgrades for the project:
+Possible upgrades for this project:
 
-- Error handling for invalid city names
-- Loading indicator while fetching weather data
-- Hide results before the first search
-- Display feels-like temperature
-- Add weather forecast (5-day forecast)
-- Use **async/await** instead of `.then()` for cleaner code
-- Add geolocation support (get weather for current location)
-- Improve UI design with icons and animations
-- Add dark mode toggle
-- Add unit switching (°C / °F)
-- Better mobile responsiveness
-- Deploy live demo with GitHub Pages
+- Add 5-day weather forecast
+- Add geolocation support (current location weather)
+- Toggle between Celsius and Fahrenheit
+- Add dark mode
+- Add search history
+- Improve UI with weather-based backgrounds
+- Replace `.then()` with `async/await`
 
 ---
 
