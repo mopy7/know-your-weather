@@ -7,27 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Know Your Weather</h1>
-  </header>
-
   <main>
-    <section>
-      <form id="search-form" action="">
-        <label for="city-input">Enter your city name to know your weather</label>
-        <input id="city-input" type="text" placeholder="City Name" required>
-        <button type="submit">Get Weather</button>
-      </form>
-    </section>
+    <div class="weather-app">
+      <header>
+        <h1>Know Your Weather</h1>
+      </header>
+  
+      <section>
+        <form id="search-form">
+          <label for="city-input">What's your location ?</label>
+          <input id="city-input" type="text" placeholder="City Name" required>
+          <button type="submit">Get Weather</button>  
+        </form>
+      </section>
 
-    <section id="weather-result">
-      <h2 id="city-name">city name</h2>
-      <img src="#" alt="Weather icon">
-      <p id="temperature">temperature</p>
-      <p id="condition">weather condition</p>
-      <p id="humidity">humidity</p>
-      <p id="wind">wind speed</p>
-    </section>
+      <section id="weather-result">
+        <h2 id="city-name">city name</h2>
+        <img src="#" alt="Weather icon">
+        <p id="temperature">temperature</p>
+        <p id="condition">weather condition</p>
+        <p id="humidity">humidity</p>
+        <p id="wind">wind speed</p>
+      </section>
+    </div>
   </main>
 
   <script src="script.js"></script>
